@@ -1,0 +1,78 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+  font-family: Verdana;
+}
+body{
+  padding:20px;
+}
+header{
+  width:100%;
+  overflow: hidden;
+}
+header>h1{
+  width:30%;
+  margin:30px auto;
+  padding:10px 5px;
+  text-align:center;
+  background-color: rgb(35, 184, 204);
+  border-radius: 20px;
+}
+.panel{
+  margin-top:15px;
+  width:100%;
+  overflow: hidden;
+  padding:10px 5px;
+  padding-left:10px;
+}
+.turno{
+  margin-left: 200px;
+  position: relative;
+}
+.turno>img{
+  width:50px;
+  display: block;
+  margin:1px auto;
+}
+.panel>h2, .turno{
+  float:left;
+}
+/*Ocultar el turno de los jugadores*/
+#player2{
+  opacity: 0;
+}
+.casilla{
+  border:3px solid black;
+}
+.ficha{
+  width:100px;
+  opacity: 0;
+}
+.gato{
+  width:30%;
+  margin:20px auto;
+  text-align: center;
+  display:none;
+}
+#reset{
+  display: block;
+  padding:5px;
+  width:10%;
+  margin:5px auto;
+}
+.fichas{
+  display:block;
+  width:50%;
+  margin:20px auto;
+  font-size:1.5em;
+  text-align:center;
+}
+.fichas img{
+  width:50px;
+  margin:20px 30px;
+}
+.fichas img:hover{
+  width:60px;
+  transition: all 300ms;
+}

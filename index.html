@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1> Gato</h1>
+  </header>
+  <div class="panel">
+    <h2>Jugador en turno:</h2>
+    <div class="turno" id="player1">
+      <img  src="redCircle.png" alt="redCircle"/>
+      <h3>Jugador 1</h3>
+    </div>
+    <div class="turno" id="player2">
+      <img src="redCircle.png" alt="redCircle"/>
+      <h3>Jugador 2</h3>
+    </div>
+  </div>
+  <div class="fichas" id="asignacion">
+    <p>Seleccione con que desea jugar el jugador 1</p>
+    <img src="cross.png" alt="cruz" onclick="asignar(1)"/>
+    <img src="circle.png" alt="circulo" onclick="asignar(2)"/>
+  </div>
+  <table class="gato" id="cat">
+    <tr class="fila">
+      <td class="casilla" id="cas1"  onclick="marca(1)">
+        <img class="ficha" src="circle.png" alt="circle"/>
+      </td>
+      <td class="casilla" id="cas2" onclick="marca(2)">
+        <img class="ficha" src="cross.png" alt="cross"/>
+      </td>
+      <td class="casilla" id="cas3" onclick="marca(3)">
+        <img class="ficha" src="circle.png" alt="circle"/>
+      </td>
+    </tr>
+    <tr class="fila">
+      <td class="casilla" id="cas4" onclick="marca(4)">
+        <img class="ficha" src="cross.png" alt="cross"/>
+      </td>
+      <td class="casilla" id="cas5" onclick="marca(5)">
+        <img class="ficha" src="circle.png" alt="circle"/>
+      </td>
+      <td class="casilla" id="cas6" onclick="marca(6)">
+        <img class="ficha" src="circle.png" alt="circle"/>
+      </td>
+    </tr>
+    <tr class="fila">
+      <td class="casilla" id="cas7" onclick="marca(7)">
+        <img class="ficha" src="cross.png" alt="cross"/>
+      </td>
+      <td class="casilla" id="cas8" onclick="marca(8)">
+        <img class="ficha" src="circle.png" alt="circle"/>
+      </td>
+      <td class="casilla" id="cas9" onclick="marca(9)">
+        <img class="ficha" src="cross.png" alt="cross"/>
+      </td>
+    </tr>
+  </table>
+    <input id="reset" type="button" onclick="location.reload()" value="Reiniciar"/>
+    <script src="main.js"></script>
+</body>
+</html>
